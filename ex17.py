@@ -15,5 +15,6 @@ print "Does the output file exist? %r" % exists(to_file)
 out_file = open(to_file, 'w'); out_file.write(indata)
 
 print "Alright, all done."
-# we have to close this file in order to save the changes 
+# we have to close this file in order to save the changes but if we use open(f).read()
+# then we don't need to close it
 # out_file.close(); in_file.close()
